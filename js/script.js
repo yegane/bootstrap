@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function(event) {
 		if($(window).width() >= 768){
-			if($(this).scrollTop() >= 300){
+			if($(this).scrollTop() >= 181){
 				$('.navbar-fixed-top').addClass('shownavbar');
 				$('.navbar-toggle').css('top', 100+'px');
 			}else{
@@ -18,7 +18,11 @@ $(document).ready(function() {
 		}		
 	});
 
-	// $('.carousel').carousel({
+	// $('.slidergroup .carousel , .collection .carousel').carousel({
+ //        interval: 2000 
+ //    })
+
+	// $('.slider .carousel').carousel({
  //        interval: 5000 
  //    })
 
