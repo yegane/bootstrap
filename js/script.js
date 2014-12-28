@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var bool = true;
+	var name;
 	if($(window).width()>768){
 		$('.collection1 .row  .left-collection1').height($('.collection1 .row  .right').outerHeight());
 	}else{
@@ -75,5 +76,17 @@ $(document).ready(function() {
 				$('.collection').css('margin-top', -125+'px');
 				$('.collection1 .row  .left-collection1').height($('.collection1 .row  .right').outerHeight());
 			}
+		});
+
+		$('.hiddenmenu a').hover(function() {
+			if($(this).length){
+				name = $(this).children('img').attr('src');
+
+				name = name.substring(7,9);
+				console.log(name);
+				$(this).children('img').attr('src', 'images/'+name+'h.png');
+			}
+		}, function() {
+			$(this).children('img').attr('src', 'images/'+name+'2.png');
 		});
 });
