@@ -1,6 +1,12 @@
 <!DOCTYPE html>
+<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
 <html>
 <head>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1 , maximum-scale=1 " /> 
@@ -13,20 +19,23 @@
 <body>
 
 	<button type="button" class="navbar-toggle" data-toggle="collapse" >
+		<div class="icon">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
+		</div>
+		<span>دسته بندی مشاغل</span>
+		<span class="clearfix"></span>
 		</button>
 
 		<nav class="navbar navbar-fixed-top">
-			<!-- <div class="container"> -->
 				<div class="row fix">
 					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
 						<div class="logo">
 							<img src="images/logoFix.png" alt="" class="img-responsive" />
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-4 col-sx-9 second">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-sx-9 second">
 						<div class="detail">
 							<ul>
 								<li><a href="">درج آگهی</a></li>
@@ -36,23 +45,18 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-5 col-sm-5 col-xs-12 third">
+					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 third">
 						<form action="" role="form" class="form-inline">
 							<button type="submit">
 								<i class="fa fa-search"></i>
 							</button>
-							<div class="form-group first">
-								<input type="text" name="" id="" placeholder="نام شهر ، محله و یا خیابان" />
-								<span>نزدیک</span>
-							</div>
 							<div class="form-group txtkeyword">
 								<input type="text" name="" id="" placeholder="متن دلخواه شما" />
 							</div>
 							<div class="clearfix"></div>
 						</form>
 					</div>
-					<div class="clearfix visible-xs-block"></div>
-					<div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 forth">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 forth">
 						<div class="enrol">
 							<ul>
 								<li><a href="">ثبت نام</a></li>
@@ -87,86 +91,12 @@
 						<div class="clearfix"></div>
 					</div>
 				</div>
-			<!-- </div> -->
-
 		</nav>
 
 	<div class="container-fluid main">
-		
-		<nav class="navbar navbar-fixed-top">
-			<!-- <div class="container"> -->
-				<div class="row fix">
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
-						<div class="logo">
-							<img src="images/logoFix.png" alt="" class="img-responsive" />
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" id="second">
-						<div class="detail">
-							<ul>
-								<li><a href="">درج آگهی</a></li>
-								<li><a href="">تخفیفات ویژه</a></li>
-								<li><a href="">جمعه بازار</a></li>
-								<li class="clearfix"></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6" id="third">
-						<form action="" role="form" class="form-inline">
-							<button type="submit">
-								<i class="fa fa-search"></i>
-							</button>
-							<div class="form-group">
-								<input type="text" name="" id="" placeholder="نام شهر ، محله و یا خیابان" />
-								<span>نزدیک</span>
-							</div>
-							<div class="form-group txtkeyword">
-								<input type="text" name="" id="" placeholder="متن دلخواه شما" />
-							</div>
-					
-						</form>
-					</div>
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-6" id="forth">
-						<div class="enrol">
-							<ul>
-								<li><a href="">ثبت نام</a></li>
-								<li><a href="">ورود</a></li>
-								<li class="clearfix"></li>
-							</ul>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="menu">
-								<ul>
-									<li><a href="">منطقه پنج</a></li>
-									<li><a href="">محله</a>
-										<ul>
-											<li><a href="">پونک</a></li>
-											<li><a href="">باغ فیض</a></li>
-											<li><a href="">چهار راه باغ</a></li>
-											<li><a href="">پیامبر</a></li>
-											<li><a href="">شهران</a></li>
-											<li><a href="">جنت آباد</a></li>
-										</ul>
-									</li>
-									<li><a href="">گروه شغلی</a></li>
-									<li><a href="">زیر گروه شغلی</a></li>
-									<li><a href="">شغلها</a></li>
-									<li class="clearfix"></li>
-								</ul>
-							</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			<!-- </div> -->
-
-		</nav>
 
 		<div class="slider">
-		<div class="carousel slide" id="myCarousel" data-ride="carousel">
+		<div class="carousel slide" id="myCarousel">
 			
 			<ol class="carousel-indicators">
 				<li data-slide-to="0" data-target="#myCarousel" class="active">
@@ -204,7 +134,7 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 first">
 						<div class="logo">
 							<img src="images/logo.png" alt="" class="img-responsive" />
 						</div>
@@ -235,10 +165,6 @@
 							<button type="submit">
 								<i class="fa fa-search"></i>
 							</button>
-							<div class="form-group first">
-								<input type="text" name="" id="" placeholder="نام شهر ، محله و یا خیابان" />
-								<span>نزدیک</span>
-							</div>
 							<div class="form-group txtkeyword">
 								<input type="text" name="" id="" placeholder="متن دلخواه شما" />
 							</div>
@@ -297,68 +223,44 @@
 			
 			<div class="row second" >
 				<div class="sliderCollection">
-					<div class="carousel slide" id="s" data-ride="carousel">
+					<div class="carousel slide" id="s">
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="row">
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="row">
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-										<div class="box">
-											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-										<div class="box">
-											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-										<div class="box">
-											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-										<div class="box">
-											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 								</div>
@@ -368,29 +270,77 @@
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 										<div class="box">
 											<img src="images/layer9.png" alt="" class="img-responsive" />
-											<h4>آژانس طاها</h4>
-											<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+										<div class="box">
+											<img src="images/layer9.png" alt="" class="img-responsive" />
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+										<div class="box">
+											<img src="images/layer9.png" alt="" class="img-responsive" />
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+										<div class="box">
+											<img src="images/layer9.png" alt="" class="img-responsive" />
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+										<div class="box">
+											<img src="images/layer9.png" alt="" class="img-responsive" />
+											
+												<h4>آژانس طاها</h4>
+												<p>تعداد 6 فروشگاه در این نمایندگی موجود می باشد.</p>
+											
 										</div>
 									</div>
 								</div>
@@ -410,252 +360,507 @@
 		<div class="collection1">
 			<div class="row" id="resturan">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-					<div class="left">
+					<div class="left-collection1">
 						<div><p>رستوران های مورد علاقه شما</p></div>
 						<span><a href="">موارد بیشتر</a></span>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					<div class="right">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<div class="box">
-								<img src="images/food.png" alt="" class="img-responsive" />
-								<a>رستوران آواچی</a>
-								<div class="clearfix"></div>
-								<div class="rate">
-									<div class="star">
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star disable"></i></li>
+						<div class="carousel slide" id="favorite">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>رستوران آواچی</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع غذاهای فست فود</p>
+												<p>شامل :</p>
+												<p>انواع ساندویچ</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>رستوران آواچی</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع غذاهای فست فود</p>
+												<p>شامل :</p>
+												<p>انواع ساندویچ</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>رستوران آواچی</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع غذاهای فست فود</p>
+												<p>شامل :</p>
+												<p>انواع ساندویچ</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
 										<div class="clearfix"></div>
 									</div>
-									<span>
-										(3)
-									</span>
-									<div class="clearfix"></div>
+									
 								</div>
-								<p>انواع غذاهای فست فود</p>
-								<p>شامل :</p>
-								<p>انواع ساندویچ</p>
-								<div class="s-d">
-									<div class="share">
-										<a href="">Share</a>
-									</div>
-									<div class="direction">
-										<a href="">Direction</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<div class="box">
-								<img src="images/food.png" alt="" class="img-responsive" />
-								<a>رستوران آواچی</a>
-								<div class="clearfix"></div>
-								<div class="rate">
-									<div class="star">
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star disable"></i></li>
+								<div class="item">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>رستوران آواچی</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع غذاهای فست فود</p>
+												<p>شامل :</p>
+												<p>انواع ساندویچ</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>رستوران آواچی</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع غذاهای فست فود</p>
+												<p>شامل :</p>
+												<p>انواع ساندویچ</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>رستوران آواچی</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع غذاهای فست فود</p>
+												<p>شامل :</p>
+												<p>انواع ساندویچ</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
 										<div class="clearfix"></div>
 									</div>
-									<span>
-										(3)
-									</span>
-									<div class="clearfix"></div>
 								</div>
-								<p>انواع غذاهای فست فود</p>
-								<p>شامل :</p>
-								<p>انواع ساندویچ</p>
-								<div class="s-d">
-									<div class="share">
-										<a href="">Share</a>
-									</div>
-									<div class="direction">
-										<a href="">Direction</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<div class="box">
-								<img src="images/food.png" alt="" class="img-responsive" />
-								<a>رستوران آواچی</a>
 								<div class="clearfix"></div>
-								<div class="rate">
-									<div class="star">
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star disable"></i></li>
-										<div class="clearfix"></div>
-									</div>
-									<span>
-										(3)
-									</span>
-									<div class="clearfix"></div>
-								</div>
-								<p>انواع غذاهای فست فود</p>
-								<p>شامل :</p>
-								<p>انواع ساندویچ</p>
-								<div class="s-d">
-									<div class="share">
-										<a href="">Share</a>
-									</div>
-									<div class="direction">
-										<a href="">Direction</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
 							</div>
+							<a class="left carousel-control" id="leftFavorite" href="#favorite" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a> 
+						  <a class="right carousel-control" id="rightFavorite" href="#favorite" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a> 
 						</div>
-						<div class="clearfix"></div>							
 					</div>
-				</div>	
+				</div>
 				<div class="clearfix"></div>			
 			</div>
 			<div class="row" id="caffee">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-					<div class="left">
+					<div class="left-collection1">
 						<div><p>رستوران های مورد علاقه شما</p></div>
 						<span><a href="">موارد بیشتر</a></span>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					<div class="right">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<div class="box">
-								<img src="images/food.png" alt="" class="img-responsive" />
-								<a>کافی شاپ سودا</a>
-								<div class="clearfix"></div>
-								<div class="rate">
-									<div class="star">
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star disable"></i></li>
+						<div class="carousel slide" id="favoriteCoffe">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>کافی شاپ سودا</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع شکلات</p>
+												<p>قهوه با طراحی آسیایی</p>
+												<p>شیرینی های روز</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>کافی شاپ سودا</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع شکلات</p>
+												<p>قهوه با طراحی آسیایی</p>
+												<p>شیرینی های روز</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>کافی شاپ سودا</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع شکلات</p>
+												<p>قهوه با طراحی آسیایی</p>
+												<p>شیرینی های روز</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
 										<div class="clearfix"></div>
 									</div>
-									<span>
-										(3)
-									</span>
-									<div class="clearfix"></div>
 								</div>
-								<p>انواع شکلات</p>
-								<p>قهوه با طراحی آسیایی</p>
-								<p>شیرینی های روز</p>
-								<div class="s-d">
-									<div class="share">
-										<a href="">Share</a>
-									</div>
-									<div class="direction">
-										<a href="">Direction</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<div class="box">
-								<img src="images/food.png" alt="" class="img-responsive" />
-								<a>کافی شاپ سودا</a>
-								<div class="clearfix"></div>
-								<div class="rate">
-									<div class="star">
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star disable"></i></li>
+								<div class="item">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>کافی شاپ سودا</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع شکلات</p>
+												<p>قهوه با طراحی آسیایی</p>
+												<p>شیرینی های روز</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>کافی شاپ سودا</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع شکلات</p>
+												<p>قهوه با طراحی آسیایی</p>
+												<p>شیرینی های روز</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="box">
+												<img src="images/food.png" alt="" class="img-responsive" />
+												<a>کافی شاپ سودا</a>
+												<div class="clearfix"></div>
+												<div class="rate">
+													<div class="star">
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star disable"></i></li>
+														<div class="clearfix"></div>
+													</div>
+													<span>
+														(3)
+													</span>
+													<div class="clearfix"></div>
+												</div>
+												<p>انواع شکلات</p>
+												<p>قهوه با طراحی آسیایی</p>
+												<p>شیرینی های روز</p>
+												<div class="s-d">
+													<div class="share">
+														<a href="">Share</a>
+													</div>
+													<div class="direction">
+														<a href="">Direction</a>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
 										<div class="clearfix"></div>
 									</div>
-									<span>
-										(3)
-									</span>
-									<div class="clearfix"></div>
 								</div>
-								<p>انواع شکلات</p>
-								<p>قهوه با طراحی آسیایی</p>
-								<p>شیرینی های روز</p>
-								<div class="s-d">
-									<div class="share">
-										<a href="">Share</a>
-									</div>
-									<div class="direction">
-										<a href="">Direction</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-							<div class="box">
-								<img src="images/food.png" alt="" class="img-responsive" />
-								<a>کافی شاپ سودا</a>
 								<div class="clearfix"></div>
-								<div class="rate">
-									<div class="star">
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star active"></i></li>
-										<li><i class="fa fa-star disable"></i></li>
-										<div class="clearfix"></div>
-									</div>
-									<span>
-										(3)
-									</span>
-									<div class="clearfix"></div>
-								</div>
-								<p>انواع شکلات</p>
-								<p>قهوه با طراحی آسیایی</p>
-								<p>شیرینی های روز</p>
-								<div class="s-d">
-									<div class="share">
-										<a href="">Share</a>
-									</div>
-									<div class="direction">
-										<a href="">Direction</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
 							</div>
+							<a class="left carousel-control" id="leftFavorite" href="#favoriteCoffe" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a> 
+						  <a class="right carousel-control" id="rightFavorite" href="#favoriteCoffe" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a> 
 						</div>
-						<div class="clearfix"></div>
 					</div>
-				</div>				
+				</div>			
 			</div>
 		</div>
 
 		<div class="group3">
 			<div class="slidergroup">
-			<div class="carousel slide" id="test" data-ride="carousel">
+			<div class="carousel slide" id="test">
 				<div class="carousel-inner">
 					<div class="item active">
 						<div class="row">
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="box">
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
 								</div>
-							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+																		
 								</div>
 						</div>
 					</div>
@@ -663,19 +868,43 @@
 						<div class="row">
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 						</div>
 					</div>
@@ -683,19 +912,43 @@
 						<div class="row">
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 								<div class="box">
-									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a></div>
+									<a href=""><img src="images/bs1.png" alt="" class="img-responsive"></a>
+									<div class="hover">
+										<p>تست</p>
+										<p>تست</p>
+									</div>
+								</div>
+																		
 								</div>
 						</div>
 					</div>
@@ -718,7 +971,36 @@
 
 		<div class="other">
 			<div class="row">
-				<img src="images/other.png" alt="" class="img-responsive" />
+				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+					<div class="dictionary">
+						
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+					<div class="awghat">
+						
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+					<div class="calendar">
+						
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+					<div class="box" id="news">
+						<h3>پر بیننده ترین اخبار</h3>
+						<div class="title">
+							<ul>
+								<li><a href="">تست</a></li>
+								<li><a href="">تست</a></li>
+								<li><a href="">تست</a></li>
+								<li><a href="">تست</a></li>
+								<li><a href="">تست</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 
@@ -866,6 +1148,21 @@
 					<li><a href="#">
 						<img src="images/h8.png" alt="" class="img-responsive">
 						خدمات در منزل</a></li>
+						<li><a href="#">
+						<img src="images/h8.png" alt="" class="img-responsive">
+						خدمات در منزل</a></li>
+						<li><a href="#">
+						<img src="images/h8.png" alt="" class="img-responsive">
+						خدمات در منزل</a></li>
+						<li><a href="#">
+						<img src="images/h8.png" alt="" class="img-responsive">
+						خدمات در منزل</a></li>
+						<li><a href="#">
+						<img src="images/h8.png" alt="" class="img-responsive">
+						خدمات در منزل</a></li>
+						<li><a href="#">
+						<img src="images/h8.png" alt="" class="img-responsive">
+						خدمات در منزل</a></li>
 			</ul>
 		</div>
 	</div>
@@ -874,6 +1171,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
 	<script src="js/script.js"></script>
 	</body>
 </html>
