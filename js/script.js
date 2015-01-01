@@ -38,14 +38,15 @@ $(document).ready(function() {
 
 	$(window).scroll(function(event) {
 		if($(window).width() >= 768){
-			if($(this).scrollTop() >= 167){
+			if($(this).scrollTop() >= 245){
 				$('.navbar-fixed-top').addClass('shownavbar');
 				$('.navbar-toggle').css('top', 160+'px');
 			}else{
 				$('.navbar-fixed-top').removeClass('shownavbar');
 				$('.navbar-toggle').css('top', 160+'px');
 			}
-		}		
+		}	
+		console.log($(window).scrollTop());	
 	});
 
 		$('.navbar-toggle').on('click', function(event) {
