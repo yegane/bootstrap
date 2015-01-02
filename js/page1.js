@@ -24,12 +24,14 @@ $(window).load(function (){
 		$('.best').addClass('hide');
 		$('.jobs').addClass('movejobs');
 		$('.row').addClass('increaseWidth');
-		$('#left').addClass('dcol');
-		$('#right').addClass('icol');
+		$('#left').addClass('icol');
+		$('#right').addClass('dcol');
+		
 		$('.view-map').addClass('hidden');
 		$('.back , .search').removeClass('hidden');
-		$('.small-map img').attr('src', 'images/test.jpg');
+		$('.small-map img').attr('src', 'images/bigmap.gif');
 		$('.small-map img').addClass('increaseHeight');
+
 	});
 
 	$('.navbar-toggle').on('click', function(event) {
@@ -45,8 +47,8 @@ $(window).load(function (){
 		$('.best').removeClass('hide');
 		$('.jobs').removeClass('movejobs');
 		$('.row').removeClass('increaseWidth');
-		$('#left').removeClass('dcol');
-		$('#right').removeClass('icol');
+		$('#right').removeClass('dcol');
+		$('#left').removeClass('icol');
 		$('.view-map').removeClass('hidden');
 		$('.back , .search').addClass('hidden');
 		$('.content-page').height('auto');
