@@ -119,7 +119,8 @@ div[class*="row"] {
   right: 10px;
   top: 10px;
   padding: 12px 3px;
-  background: #fff;
+  background: #8ED0F9;
+  color: #fff;
   border-radius: 0;
   top: 160px;
   right: -68px;
@@ -144,7 +145,7 @@ div[class*="row"] {
   margin-right: 12px;
 }
 .navbar-toggle .icon-bar {
-  background: #56584B;
+  background: #fff;
 }
 
 .move {
@@ -206,7 +207,7 @@ div[class*="row"] {
 @media only screen and (min-width: 992px) {
   .navbar-fixed-top .logo {
     width: 110px;
-    margin: 7px 0 0 75%;
+    margin: 14px 0 0 75%;
   }
 }
 .navbar-fixed-top .second {
@@ -303,8 +304,27 @@ div[class*="row"] {
     margin-right: 0;
   }
 }
+.navbar-fixed-top form .suggest-search {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: none;
+  z-index: 5;
+  background: #fff;
+}
+.navbar-fixed-top form .suggest-search li {
+  padding: 10px 5px;
+  font-size: 1em;
+  color: #333;
+  text-align: right;
+  border-bottom: 1px solid #efe9e9;
+}
+.navbar-fixed-top form .suggest-search li:last-child {
+  border-bottom: none;
+}
 .navbar-fixed-top form .form-group {
   margin-bottom: 0;
+  position: relative;
   width: 85%;
   float: left;
   margin-left: 1%;
@@ -647,6 +667,9 @@ div[class*="row"] {
 /*--------------------
 	content-page
 ----------------------*/
+.content-page {
+  padding: 10px 0;
+}
 .content-page .row {
   width: 100%;
   margin: 0 auto;
@@ -664,20 +687,38 @@ div[class*="row"] {
     width: 40%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .content-page .dcol {
+    width: 35%;
+  }
+}
 .content-page .dcol div[class*='result-'] img {
-  margin: 0;
+  margin: 5px;
 }
 .content-page .dcol div[class*='result-'] .info > * {
   padding-right: 10px;
 }
 .content-page .dcol div[class*='result-'] .info a {
-  font-size: 1em;
+  font-size: 1.4em;
 }
 .content-page .dcol div[class*='result-'] .info p {
-  font-size: .8em;
+  font-size: 1.1em;
 }
-.content-page .dcol div[class*='result-'] .link .second a {
-  font-size: .8em;
+.content-page .dcol div[class*='result-'] .link .first a {
+  font-size: 1.1em;
+}
+@media only screen and (min-width: 768px) {
+  .content-page .dcol div[class*='result-'] .link .second a {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content-page .dcol div[class*='result-'] .link .second a {
+    font-size: .8em;
+  }
+}
+.content-page .dcol div[class*='result-'] .third a {
+  font-size: 1.2em;
 }
 .content-page .icol {
   width: 100%;
@@ -690,12 +731,17 @@ div[class*="row"] {
     width: 60%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .content-page .icol {
+    width: 65%;
+  }
+}
 .content-page .increaseWidth {
   width: 100%;
 }
 
 #left {
-  float: right;
+  float: left;
   overflow: auto;
 }
 @media only screen and (max-width: 640px) {
@@ -723,14 +769,19 @@ div[class*="row"] {
   position: absolute;
   top: 8px;
   left: -3px;
-  color: #000;
+  color: #83D1E4;
   font-weight: bold;
   font-size: 0.8em;
 }
 .jobs .path ul a {
   padding: 5px 8px;
-  font-size: 1.1em;
-  color: #000;
+  font-size: 1.3em;
+  color: #83D1E4;
+}
+@media only screen and (min-width: 768px) {
+  .jobs .path ul a {
+    font-size: 1.1em;
+  }
 }
 .jobs .path p {
   text-align: right;
@@ -738,6 +789,12 @@ div[class*="row"] {
   line-height: 1.2em;
   padding-right: 16px;
   direction: rtl;
+  font-size: 1.3em;
+}
+@media only screen and (min-width: 768px) {
+  .jobs .path p {
+    font-size: 1.1em;
+  }
 }
 .jobs .filter {
   margin: 10px 0;
@@ -769,10 +826,21 @@ div[class*="row"] {
 }
 .jobs .filter .select > * {
   direction: rtl;
+  padding-right: 10px;
 }
 .jobs .filter .select .title {
   margin: 5px;
   font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .jobs .filter .select .title {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jobs .filter .select .title {
+    font-size: 1.4em;
+  }
 }
 .jobs .filter .select input[type="checkbox"], .jobs .filter .select input[type="radio"] {
   margin: 3px -18px 0 0;
@@ -780,24 +848,44 @@ div[class*="row"] {
 .jobs .filter .select label {
   padding-right: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .jobs .filter .select label {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jobs .filter .select label {
+    font-size: 1.3em;
+  }
+}
 .jobs .list-of-resturant .result {
   overflow: auto;
 }
-.jobs .list-of-resturant div[class*='result-'] > *:not(.clearfix) {
+.jobs .list-of-resturant div[class*='result-'] > div > *:not(.clearfix) {
   float: right;
 }
 .jobs .list-of-resturant div[class*='result-'] {
-  padding: 10px 0;
+  padding: 5px 0;
   position: relative;
 }
 .jobs .list-of-resturant div[class*='result-']:hover .ribbon {
   display: block;
 }
-.jobs .list-of-resturant div[class*='result-']:not(:last-child) {
-  border-bottom: 1px solid #777;
-}
 .jobs .list-of-resturant .link {
   direction: rtl;
+}
+.jobs .list-of-resturant .link > div {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .jobs .list-of-resturant .link > div {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jobs .list-of-resturant .link {
+    width: 100%;
+  }
 }
 .jobs .list-of-resturant .link li:not(.clearfix) {
   float: right;
@@ -808,26 +896,32 @@ div[class*="row"] {
   left: 0;
 }
 .jobs .list-of-resturant .link .first li:nth-child(1) a:before, .jobs .list-of-resturant .link .first li:nth-child(2) a:before {
-  content: ',';
-  color: #333;
+  content: '|';
+  color: #57ABF0;
   font-size: .9em;
 }
 .jobs .list-of-resturant .link .first a {
-  color: #000;
+  color: #409BAB;
   font-size: 1em;
   position: relative;
   padding: 5px 8px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   .jobs .list-of-resturant .link .first a {
-    padding: 5px;
     font-size: 1.2em;
   }
 }
+@media only screen and (max-width: 480px) {
+  .jobs .list-of-resturant .link .first a {
+    padding: 5px;
+    font-size: 1.3em;
+  }
+}
 .jobs .list-of-resturant .link .second li:nth-child(1) a:before, .jobs .list-of-resturant .link .second li:nth-child(2) a:before {
-  content: '.';
+  content: '|';
   color: #57ABF0;
   font-size: .9em;
+  top: 8px;
 }
 .jobs .list-of-resturant .link .second a {
   color: #0fabcc;
@@ -835,10 +929,15 @@ div[class*="row"] {
   position: relative;
   padding: 5px 8px;
 }
+@media only screen and (max-width: 767px) {
+  .jobs .list-of-resturant .link .second a {
+    font-size: 1.2em;
+  }
+}
 @media only screen and (max-width: 480px) {
   .jobs .list-of-resturant .link .second a {
-    padding: 5px 3px;
-    font-size: 1.2em;
+    padding: 5px;
+    font-size: 1.3em;
   }
 }
 .jobs .list-of-resturant .link .third {
@@ -857,7 +956,7 @@ div[class*="row"] {
 }
 .jobs .list-of-resturant .link .third a:before, .jobs .list-of-resturant .link .third a:after {
   position: absolute;
-  top: 16px;
+  top: 13px;
   font-family: fontAwesome;
   color: #337ab7;
   content: '\f053';
@@ -874,13 +973,26 @@ div[class*="row"] {
 .jobs .list-of-resturant .link .third a:after {
   left: -9px;
 }
+@media only screen and (max-width: 480px) {
+  .jobs .list-of-resturant .info {
+    width: 100%;
+  }
+}
+.jobs .list-of-resturant .info > div {
+  padding-right: 10px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .jobs .list-of-resturant .info > div {
+    margin-top: 0;
+  }
+}
 .jobs .list-of-resturant .info a {
   color: #0fabcc;
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height: 1.2em;
   display: inline;
   float: right;
-  padding-right: 15px;
 }
 @media only screen and (min-width: 768px) {
   .jobs .list-of-resturant .info a {
@@ -891,23 +1003,23 @@ div[class*="row"] {
 .jobs .list-of-resturant .info p {
   direction: rtl;
   margin: 5px 0;
-  padding-right: 15px;
+  font-size: 1.2em;
 }
 @media only screen and (min-width: 768px) {
   .jobs .list-of-resturant .info p {
-    padding-right: 0;
+    font-size: 1em;
   }
 }
 .jobs .list-of-resturant .logo img {
   width: 110px;
   height: 90px;
-  margin: 5px 10px;
+  margin: 5px;
   float: right;
 }
 @media only screen and (min-width: 768px) {
   .jobs .list-of-resturant .logo img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 75px;
   }
 }
 .jobs #pagination {
@@ -945,7 +1057,7 @@ div[class*="row"] {
 }
 
 #right {
-  float: right;
+  float: left;
   overflow: auto;
 }
 @media only screen and (max-width: 640px) {
@@ -1109,31 +1221,41 @@ div[class*="row"] {
     font-size: 1.6em;
   }
 }
+@media only screen and (max-width: 640px) {
+  .propaganda .best > ul > li > .box > a {
+    font-size: 1.4em;
+  }
+}
 .propaganda .best li li:not(.clearfix) {
   float: right;
 }
 .propaganda .best li li:nth-child(1) a:before, .propaganda .best li li:nth-child(2) a:before, .propaganda .best li li:nth-child(3) a:before {
-  content: '.';
+  content: '|';
   position: absolute;
   top: 0;
   font-weight: bold;
-  color: #000;
+  color: #57ABF0;
   left: 0;
 }
 .propaganda .best li li a {
-  font-size: 1.1em;
+  font-size: 1.3em;
   padding: 0 7px;
   position: relative;
 }
+@media only screen and (min-width: 768px) {
+  .propaganda .best li li a {
+    font-size: 1.1em;
+  }
+}
 .propaganda .best p {
-  font-size: 1em;
+  font-size: 1.3em;
   padding-right: 10px;
   text-align: right;
   line-height: 1.3em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) {
   .propaganda .best p {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 .propaganda .best .logo {
@@ -1178,6 +1300,12 @@ footer .menu li {
 footer .menu a {
   color: #fff;
   display: inline;
+  font-size: 1.4em;
+}
+@media only screen and (min-width: 768px) {
+  footer .menu a {
+    font-size: 1.2em;
+  }
 }
 footer .link {
   width: 210px;
@@ -1248,7 +1376,7 @@ footer .right p {
 	rate
 ---------------------*/
 .rate {
-  margin: 5px 10px 5px 0;
+  margin: 10px 10px 0px 0;
   float: right;
 }
 .rate span {
